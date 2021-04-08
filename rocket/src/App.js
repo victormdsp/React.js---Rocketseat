@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Cabeca from './Models/Head/head'
+import Corpo from './Models/Body/body'
+import Rodape from './Models/Footer/footer'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cabeca className = 'head'></Cabeca>
+      <Corpo className = 'corpo'></Corpo>
+      <Rodape className = 'rodape'></Rodape>
     </div>
   );
 }
